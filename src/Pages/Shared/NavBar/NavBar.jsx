@@ -76,9 +76,13 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="flex items-center space-x-3">
-          <button className="py-2  px-3 bg-gradient-to-r from-cyan-400 to-sky-700 rounded shadow-sm">
+          <a
+            href="Prashoman Chakrabarti_Resume.pdf"
+            download="Resume"
+            className="py-2  px-3 bg-gradient-to-r from-cyan-400 to-sky-700 rounded shadow-sm"
+          >
             Resume
-          </button>
+          </a>
           <p className="md:hidden" onClick={() => setOpen(!open)}>
             {open ? (
               <FaTimes className="h-8 w-10 text-blue-500" />

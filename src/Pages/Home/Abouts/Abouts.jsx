@@ -44,25 +44,25 @@ const Abouts = () => {
                 <div>
                   <h1>Expertise :</h1>
                   <div className="space-x-4 space-y-3 text-start">
-                    <button className="border-2 text-white border-white px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
+                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
                       HTML5
                     </button>
-                    <button className="border-2 text-white border-white px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
+                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
                       CSS3
                     </button>
-                    <button className="border-2 text-white border-white px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
+                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
                       Bootstrap
                     </button>
-                    <button className="border-2 text-white border-white px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
+                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
                       Tailwind
                     </button>
-                    <button className="border-2 text-white border-white px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
+                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
                       JavaScript
                     </button>
-                    <button className="border-2 text-white border-white px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
+                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
                       ES6
                     </button>
-                    <button className="border-2 text-white border-white px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
+                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
                       React JS
                     </button>
                   </div>
@@ -70,13 +70,13 @@ const Abouts = () => {
                 <div>
                   <h1>Comfortable : </h1>
                   <div className="space-x-4 text-start">
-                    <button className="border-2 text-white border-white px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
+                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
                       Node JS
                     </button>
-                    <button className="border-2 text-white border-white px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
+                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
                       Express JS
                     </button>
-                    <button className="border-2 text-white border-white px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
+                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
                       MongoDB
                     </button>
                   </div>
@@ -84,16 +84,16 @@ const Abouts = () => {
                 <div>
                   <h1>Familiar with : </h1>
                   <div className="space-x-4 text-start">
-                    <button className="border-2 text-white border-white px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
+                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
                       Next js
                     </button>
-                    <button className="border-2 text-white border-white px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
+                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
                       MVC
                     </button>
-                    <button className="border-2 text-white border-white px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
+                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
                       Mongoose
                     </button>
-                    <button className="border-2 text-white border-white px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
+                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
                       Redux
                     </button>
                   </div>
@@ -101,22 +101,22 @@ const Abouts = () => {
                 <div>
                   <h1>Tools :</h1>
                   <div className="space-x-4 text-start space-y-3">
-                    <button className="border-2 text-white border-white px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
+                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
                       Visual Studio
                     </button>
-                    <button className="border-2 text-white border-white px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
+                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
                       Chrome dev Tool
                     </button>
-                    <button className="border-2 text-white border-white px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
+                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
                       Netlify
                     </button>
-                    <button className="border-2 text-white border-white px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
+                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
                       Figma
                     </button>
-                    <button className="border-2 text-white border-white px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
+                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
                       Firebase
                     </button>
-                    <button className="border-2 text-white border-white px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
+                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
                       GitHub
                     </button>
                   </div>
@@ -141,18 +141,31 @@ const Abouts = () => {
                   </h1>
                 </div>
                 <div className="flex items-center space-x-5">
-                  <FaFacebook className="w-10 h-8"></FaFacebook>
-                  <FaGithub className="w-10 h-8"></FaGithub>
-                  <FaLinkedinIn className="w-10 h-8"></FaLinkedinIn>
-                  <FaInstagram className="w-10 h-8"></FaInstagram>
+                  <a href="https://www.facebook.com/prashmon.chakroborty">
+                    {" "}
+                    <FaFacebook className="w-10 h-8"></FaFacebook>
+                  </a>
+                  <a href="https://github.com/Prashoman">
+                    <FaGithub className="w-10 h-8"></FaGithub>
+                  </a>
+                  <a href="https://www.linkedin.com/in/prashoman-chakrabarti-2b827423b/">
+                    <FaLinkedinIn className="w-10 h-8"></FaLinkedinIn>
+                  </a>
+                  <a href="https://www.instagram.com/badhon_chakrabarti_/">
+                    <FaInstagram className="w-10 h-8"></FaInstagram>
+                  </a>
                 </div>
               </div>
             </TabPanel>
           </Tabs>
           <div className="my-3">
-            <button className="py-2  px-3 bg-gradient-to-r from-cyan-400 to-sky-700 rounded shadow-sm">
+            <a
+              href="Prashoman Chakrabarti_Resume.pdf"
+              download="Resume"
+              className="py-2  px-3 bg-gradient-to-r from-cyan-400 to-sky-700 rounded shadow-sm"
+            >
               Resume
-            </button>
+            </a>
           </div>
         </div>
       </div>

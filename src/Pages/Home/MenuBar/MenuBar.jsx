@@ -1,6 +1,7 @@
 import Lottie from "lottie-react";
 import profile from "../../../assets/profile.json";
 import "./MenuBar.css";
+import { Link } from "react-router-dom";
 
 const MenuBar = () => {
   return (
@@ -20,13 +21,16 @@ const MenuBar = () => {
           </div>
 
           <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+            I am a MERN Stack Developer. I from Dhaka, Bangladesh. I have
+            completed my diploma course with computer technology from cumilla
+            polytechnic institute in 2022.Recently, I have completed Mern stack
+            course from Programming hero.
           </p>
-          <button className="py-2  px-3 bg-gradient-to-r from-cyan-400 to-sky-700 rounded shadow-sm">
-            See More Project
-          </button>
+          <Link to="/projects">
+            <button className="py-2  px-3 bg-gradient-to-r from-cyan-400 to-sky-700 rounded shadow-sm">
+              See More Project
+            </button>
+          </Link>
         </div>
         <div className="w-full lg:w-1/2">
           <Lottie animationData={profile} loop={true} />

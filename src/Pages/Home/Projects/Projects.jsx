@@ -1,5 +1,6 @@
 import "./Project.css";
-import { FaGithub, FaMars } from "react-icons/fa";
+import { FaGithub, FaLink } from "react-icons/fa";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -30,9 +31,16 @@ const Projects = () => {
           <div className="card-body">
             <h2 className="card-title">Photography Institute Website</h2>
             <div className="flex space-x-3 items-center">
-              <FaGithub className="w-8 h-7"></FaGithub>: <a href="">Client</a>
-              <FaGithub className="w-8 h-7"></FaGithub>: <a href="">Server</a>
-              <FaMars className="w-8 h-7"></FaMars>: <a href="">Live</a>
+              <FaGithub className="w-8 h-7"></FaGithub>:{" "}
+              <a href="https://github.com/Prashoman/photo-school-client">
+                Client
+              </a>
+              <FaGithub className="w-8 h-7"></FaGithub>:{" "}
+              <a href="https://github.com/Prashoman/photo-school-server">
+                Server
+              </a>
+              <FaLink className="w-8 h-7"></FaLink>:{" "}
+              <a href="https://photography-school-client.web.app/">Live</a>
             </div>
             <div className="card-actions justify-end">
               <button
@@ -58,9 +66,16 @@ const Projects = () => {
             <h2 className="card-title">Indian Chef Recipes Website</h2>
 
             <div className="flex space-x-3 items-center">
-              <FaGithub className="w-8 h-7"></FaGithub>: <a href="">Client</a>
-              <FaGithub className="w-8 h-7"></FaGithub>: <a href="">Server</a>
-              <FaMars className="w-8 h-7"></FaMars>: <a href="">Live</a>
+              <FaGithub className="w-8 h-7"></FaGithub>:{" "}
+              <a href="https://github.com/Prashoman/indian-chef-recipe-client">
+                Client
+              </a>
+              <FaGithub className="w-8 h-7"></FaGithub>:{" "}
+              <a href="https://github.com/Prashoman/indian-chef-recipes-server">
+                Server
+              </a>
+              <FaLink className="w-8 h-7"></FaLink>:{" "}
+              <a href="https://indian-chef-recipe-client.web.app/">Live</a>
             </div>
             <div className="card-actions justify-end">
               <button
@@ -85,9 +100,21 @@ const Projects = () => {
           <div className="card-body">
             <h2 className="card-title">Animal Toys Website</h2>
             <div className="flex space-x-3 items-center">
-              <FaGithub className="w-8 h-7"></FaGithub>: <a href="">Client</a>
-              <FaGithub className="w-8 h-7"></FaGithub>: <a href="">Server</a>
-              <FaMars className="w-8 h-7"></FaMars>: <a href="">Live</a>
+              <FaGithub className="w-8 h-7"></FaGithub>:{" "}
+              <a href="https://github.com/Prashoman/animal-toys-client">
+                Client
+              </a>
+              <FaGithub className="w-8 h-7"></FaGithub>:{" "}
+              <a href="https://github.com/Prashoman/animal-toys-server">
+                Server
+              </a>
+              <FaLink className="w-8 h-7"></FaLink>:{" "}
+              <a
+                className="font-bold"
+                href="https://animal-toys-client.web.app/"
+              >
+                Live
+              </a>
             </div>
             <div className="card-actions justify-end">
               <button
@@ -182,9 +209,16 @@ const Projects = () => {
           </div>
           <h3 className="font-bold text-lg">PhotoGraphy Institute Website</h3>
           <div className="flex space-x-3 items-center">
-            <FaGithub className="w-8 h-7"></FaGithub>: <a href="">Client</a>
-            <FaGithub className="w-8 h-7"></FaGithub>: <a href="">Server</a>
-            <FaMars className="w-8 h-7"></FaMars>: <a href="">Live</a>
+            <FaGithub className="w-8 h-7"></FaGithub>:{" "}
+            <a href="https://github.com/Prashoman/photo-school-client">
+              Client
+            </a>
+            <FaGithub className="w-8 h-7"></FaGithub>:{" "}
+            <a href="https://github.com/Prashoman/photo-school-server">
+              Server
+            </a>
+            <FaLink className="w-8 h-7"></FaLink>:{" "}
+            <a href="https://photography-school-client.web.app/">Live</a>
           </div>
           <div>
             <h2 className="text-xl font-sans font-bold mt-4 mb-2">Frontend:</h2>
@@ -286,9 +320,16 @@ const Projects = () => {
           </div>
           <h3 className="font-bold text-lg">Indian Chef Recipes Website</h3>
           <div className="flex space-x-3 items-center">
-            <FaGithub className="w-8 h-7"></FaGithub>: <a href="">Client</a>
-            <FaGithub className="w-8 h-7"></FaGithub>: <a href="">Server</a>
-            <FaMars className="w-8 h-7"></FaMars>: <a href="">Live</a>
+            <FaGithub className="w-8 h-7"></FaGithub>:{" "}
+            <a href="https://github.com/Prashoman/indian-chef-recipe-client">
+              Client
+            </a>
+            <FaGithub className="w-8 h-7"></FaGithub>:{" "}
+            <a href="https://github.com/Prashoman/indian-chef-recipes-server">
+              Server
+            </a>
+            <FaLink className="w-8 h-7"></FaLink>:{" "}
+            <a href="https://indian-chef-recipe-client.web.app/">Live</a>
           </div>
           <div>
             <h2 className="text-xl font-sans font-bold mt-4 mb-2">Frontend:</h2>
@@ -400,9 +441,14 @@ const Projects = () => {
           </div>
           <h3 className="font-bold text-lg">Animal Toys Em Website</h3>
           <div className="flex space-x-3 items-center">
-            <FaGithub className="w-8 h-7"></FaGithub>: <a href="">Client</a>
-            <FaGithub className="w-8 h-7"></FaGithub>: <a href="">Server</a>
-            <FaMars className="w-8 h-7"></FaMars>: <a href="">Live</a>
+            <FaGithub className="w-8 h-7"></FaGithub>:{" "}
+            <a href="https://github.com/Prashoman/animal-toys-client">Client</a>
+            <FaGithub className="w-8 h-7"></FaGithub>:{" "}
+            <a href="https://github.com/Prashoman/animal-toys-server">Server</a>
+            <FaLink className="w-8 h-7"></FaLink>:{" "}
+            <a className="font-bold" href="https://animal-toys-client.web.app/">
+              Live
+            </a>
           </div>
           <div>
             <h2 className="text-xl font-sans font-bold mt-4 mb-2">Frontend:</h2>

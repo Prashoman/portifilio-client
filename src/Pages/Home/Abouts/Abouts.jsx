@@ -7,21 +7,35 @@ import {
   FaLinkedinIn,
   FaInstagram,
 } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Abouts = () => {
   return (
-    <div className="px-5 lg:px-20 w-full h-full bg-slate-800 text-white py-10 section-about -mt-36 lg:-mt-24">
+    <div className="px-5 lg:px-20 w-full h-full bg-slate-800 text-white py-10 section-about -mt-36 lg:-mt-28">
       <div className="text-center py-10">
         <h1 className="text-3xl font-sans font-bold text-[#4e9eff] mt-20  lg:mt-10">
           About Me
         </h1>
       </div>
       <div className="space-y-6 lg:flex justify-between mt-8">
-        <img
+        <motion.img
+          whileHover={{
+            scale: 1,
+            //textShadow: "0px 0px 8px rgb(255,255,255)",
+            boxShadow: "0px 0px 8px rgb(255,255,255)",
+          }}
           src="https://i.ibb.co/pJHKFYc/Whats-App-Image-2023-05-26-at-4-15-32-PM-removebg-preview.png"
           className="w-full lg:w-80 h-full rounded-lg border-2 border-[#4e9eff] img-style"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
         />
-        <div className="lg:ms-6 w-full h-full">
+
+        <div
+          className="lg:ms-6 w-full h-full"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <Tabs>
             <TabList>
               <Tab>Profile</Tab>
@@ -40,85 +54,231 @@ const Abouts = () => {
             </TabPanel>
             <TabPanel>
               <h2 className="text-2xl font-sans font-bold">My Skills</h2>
-              <div className="space-y-3">
-                <div>
-                  <h1>Expertise :</h1>
-                  <div className="space-x-4 space-y-3 text-start">
-                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
-                      HTML5
-                    </button>
-                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
-                      CSS3
-                    </button>
-                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
-                      Bootstrap
-                    </button>
-                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
-                      Tailwind
-                    </button>
-                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
-                      JavaScript
-                    </button>
-                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
-                      ES6
-                    </button>
-                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
-                      React JS
-                    </button>
+              <div className="px-6 py-4 lg:px-24 text-white">
+                <div className="space-y-3">
+                  <div>
+                    <h1 className="text-xl font-sans font-bold">Expertise :</h1>
+                    <div className="space-x-4 space-y-3 text-start">
+                      <motion.button
+                        className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500"
+                        whileHover={{
+                          scale: 1.2,
+                          //textShadow: "0px 0px 8px rgb(255,255,255)",
+                          boxShadow: "0px 0px 8px rgb(255,255,255)",
+                        }}
+                      >
+                        HTML5
+                      </motion.button>
+                      <motion.button
+                        className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500"
+                        whileHover={{
+                          scale: 1.2,
+                          //textShadow: "0px 0px 8px rgb(255,255,255)",
+                          boxShadow: "0px 0px 8px rgb(255,255,255)",
+                        }}
+                      >
+                        CSS3
+                      </motion.button>
+                      <motion.button
+                        className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500"
+                        whileHover={{
+                          scale: 1.2,
+                          //textShadow: "0px 0px 8px rgb(255,255,255)",
+                          boxShadow: "0px 0px 8px rgb(255,255,255)",
+                        }}
+                      >
+                        Bootstrap
+                      </motion.button>
+                      <motion.button
+                        className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500"
+                        whileHover={{
+                          scale: 1.2,
+                          //textShadow: "0px 0px 8px rgb(255,255,255)",
+                          boxShadow: "0px 0px 8px rgb(255,255,255)",
+                        }}
+                      >
+                        Tailwind
+                      </motion.button>
+                      <motion.button
+                        className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500"
+                        whileHover={{
+                          scale: 1.2,
+                          //textShadow: "0px 0px 8px rgb(255,255,255)",
+                          boxShadow: "0px 0px 8px rgb(255,255,255)",
+                        }}
+                      >
+                        JavaScript
+                      </motion.button>
+                      <motion.button
+                        className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500"
+                        whileHover={{
+                          scale: 1.2,
+                          //textShadow: "0px 0px 8px rgb(255,255,255)",
+                          boxShadow: "0px 0px 8px rgb(255,255,255)",
+                        }}
+                      >
+                        ES6
+                      </motion.button>
+                      <motion.button
+                        className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500"
+                        whileHover={{
+                          scale: 1.2,
+                          //textShadow: "0px 0px 8px rgb(255,255,255)",
+                          boxShadow: "0px 0px 8px rgb(255,255,255)",
+                        }}
+                      >
+                        React JS
+                      </motion.button>
+                    </div>
                   </div>
-                </div>
-                <div>
-                  <h1>Comfortable : </h1>
-                  <div className="space-x-4 text-start">
-                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
-                      Node JS
-                    </button>
-                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
-                      Express JS
-                    </button>
-                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
-                      MongoDB
-                    </button>
+                  <div>
+                    <h1 className="text-xl font-sans font-bold">
+                      Comfortable :{" "}
+                    </h1>
+                    <div className="space-x-4 text-start space-y-3">
+                      <motion.button
+                        className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500"
+                        whileHover={{
+                          scale: 1.2,
+                          //textShadow: "0px 0px 8px rgb(255,255,255)",
+                          boxShadow: "0px 0px 8px rgb(255,255,255)",
+                        }}
+                      >
+                        Node JS
+                      </motion.button>
+                      <motion.button
+                        className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500"
+                        whileHover={{
+                          scale: 1.2,
+                          //textShadow: "0px 0px 8px rgb(255,255,255)",
+                          boxShadow: "0px 0px 8px rgb(255,255,255)",
+                        }}
+                      >
+                        Express JS
+                      </motion.button>
+                      <motion.button
+                        className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500"
+                        whileHover={{
+                          scale: 1.2,
+                          //textShadow: "0px 0px 8px rgb(255,255,255)",
+                          boxShadow: "0px 0px 8px rgb(255,255,255)",
+                        }}
+                      >
+                        MongoDB
+                      </motion.button>
+                    </div>
                   </div>
-                </div>
-                <div>
-                  <h1>Familiar with : </h1>
-                  <div className="space-x-4 text-start">
-                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
-                      Next js
-                    </button>
-                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
-                      MVC
-                    </button>
-                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
-                      Mongoose
-                    </button>
-                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
-                      Redux
-                    </button>
+                  <div>
+                    <h1 className="text-xl font-sans font-bold">
+                      Familiar with :{" "}
+                    </h1>
+                    <div className="space-x-4 text-start space-y-3">
+                      <motion.button
+                        className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500"
+                        whileHover={{
+                          scale: 1.2,
+                          //textShadow: "0px 0px 8px rgb(255,255,255)",
+                          boxShadow: "0px 0px 8px rgb(255,255,255)",
+                        }}
+                      >
+                        Next js
+                      </motion.button>
+                      <motion.button
+                        className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500"
+                        whileHover={{
+                          scale: 1.2,
+                          //textShadow: "0px 0px 8px rgb(255,255,255)",
+                          boxShadow: "0px 0px 8px rgb(255,255,255)",
+                        }}
+                      >
+                        MVC
+                      </motion.button>
+                      <motion.button
+                        className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500"
+                        whileHover={{
+                          scale: 1.2,
+                          //textShadow: "0px 0px 8px rgb(255,255,255)",
+                          boxShadow: "0px 0px 8px rgb(255,255,255)",
+                        }}
+                      >
+                        Mongoose
+                      </motion.button>
+                      <motion.button
+                        className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500"
+                        whileHover={{
+                          scale: 1.2,
+                          //textShadow: "0px 0px 8px rgb(255,255,255)",
+                          boxShadow: "0px 0px 8px rgb(255,255,255)",
+                        }}
+                      >
+                        Redux
+                      </motion.button>
+                    </div>
                   </div>
-                </div>
-                <div>
-                  <h1>Tools :</h1>
-                  <div className="space-x-4 text-start space-y-3">
-                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
-                      Visual Studio
-                    </button>
-                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
-                      Chrome dev Tool
-                    </button>
-                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
-                      Netlify
-                    </button>
-                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
-                      Figma
-                    </button>
-                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
-                      Firebase
-                    </button>
-                    <button className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500">
-                      GitHub
-                    </button>
+                  <div>
+                    <h1 className="text-xl font-sans font-bold">Tools :</h1>
+                    <div className="space-x-4 text-start space-y-3">
+                      <motion.button
+                        className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500"
+                        whileHover={{
+                          scale: 1.2,
+                          //textShadow: "0px 0px 8px rgb(255,255,255)",
+                          boxShadow: "0px 0px 8px rgb(255,255,255)",
+                        }}
+                      >
+                        Visual Studio
+                      </motion.button>
+                      <motion.button
+                        className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500"
+                        whileHover={{
+                          scale: 1.2,
+                          //textShadow: "0px 0px 8px rgb(255,255,255)",
+                          boxShadow: "0px 0px 8px rgb(255,255,255)",
+                        }}
+                      >
+                        Chrome dev Tool
+                      </motion.button>
+                      <motion.button
+                        className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500"
+                        whileHover={{
+                          scale: 1.2,
+                          //textShadow: "0px 0px 8px rgb(255,255,255)",
+                          boxShadow: "0px 0px 8px rgb(255,255,255)",
+                        }}
+                      >
+                        Netlify
+                      </motion.button>
+                      <motion.button
+                        className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500"
+                        whileHover={{
+                          scale: 1.2,
+                          //textShadow: "0px 0px 8px rgb(255,255,255)",
+                          boxShadow: "0px 0px 8px rgb(255,255,255)",
+                        }}
+                      >
+                        Figma
+                      </motion.button>
+                      <motion.button
+                        className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500"
+                        whileHover={{
+                          scale: 1.2,
+                          //textShadow: "0px 0px 8px rgb(255,255,255)",
+                          boxShadow: "0px 0px 8px rgb(255,255,255)",
+                        }}
+                      >
+                        Firebase
+                      </motion.button>
+                      <motion.button
+                        className="border-2 text-white border-[#4e9eff] px-2 py-1 lg:px-3 lg:py-2 hover:bg-gray-500"
+                        whileHover={{
+                          scale: 1.2,
+                          //textShadow: "0px 0px 8px rgb(255,255,255)",
+                          boxShadow: "0px 0px 8px rgb(255,255,255)",
+                        }}
+                      >
+                        GitHub
+                      </motion.button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -159,13 +319,18 @@ const Abouts = () => {
             </TabPanel>
           </Tabs>
           <div className="my-3">
-            <a
+            <motion.a
+              whileHover={{
+                scale: 1.5,
+                //textShadow: "0px 0px 8px rgb(255,255,255)",
+                boxShadow: "0px 0px 8px rgb(255,255,255)",
+              }}
               href="Prashoman Chakrabarti_Resume.pdf"
               download="Resume"
               className="py-2  px-3 bg-gradient-to-r from-cyan-400 to-sky-700 rounded shadow-sm"
             >
               Resume
-            </a>
+            </motion.a>
           </div>
         </div>
       </div>

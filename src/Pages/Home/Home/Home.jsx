@@ -5,7 +5,10 @@ import Projects from "../Projects/Projects";
 import Services from "../Services/Services";
 import SkillsSection from "../SkillsSection/SkillsSection";
 
+//import { motion, useScroll } from "framer-motion";
+
 const Home = () => {
+  //const { scrollYProgress } = useScroll();
   return (
     <div>
       <MenuBar></MenuBar>

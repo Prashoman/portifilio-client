@@ -5,6 +5,7 @@ import {
   FaLinkedinIn,
   FaInstagram,
 } from "react-icons/fa";
+import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import contact from "../../../assets/contact.json";
 
@@ -18,10 +19,18 @@ const Contact = () => {
       </div>
       <div className="lg:flex w-full items-center">
         <div className="w-full lg:w-1/2">
-          <div className="w-full lg:w-1/2">
+          <div
+            className="w-full lg:w-1/2"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <Lottie animationData={contact} loop={true} />
           </div>
-          <div className="w-full h-full py-6 space-y-4">
+          <div
+            className="w-full h-full py-6 space-y-4"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <div>
               <h1 className="flex items-center text-xl lg:text-2xl">
                 <HiOutlineMail /> : prashomanchakrabarti1@gmail.com{" "}
@@ -37,34 +46,59 @@ const Contact = () => {
               </h1>
             </div>
             <div className="flex items-center space-x-5">
-              <a
+              <motion.a
+                whileHover={{
+                  scale: 1.1,
+                  textShadow: "0px 0px 8px rgb(255,255,255)",
+                  boxShadow: "0px 0px 8px rgb(255,255,255)",
+                }}
                 href="https://www.facebook.com/prashmon.chakroborty"
                 className="bg-gradient-to-r px-1 py-1 cursor-pointer  rounded-full from-cyan-400 to-sky-700  shadow-sm"
               >
                 <FaFacebook className="w-10 h-8"></FaFacebook>
-              </a>
-              <a
+              </motion.a>
+              <motion.a
+                whileHover={{
+                  scale: 1.1,
+                  textShadow: "0px 0px 8px rgb(255,255,255)",
+                  boxShadow: "0px 0px 8px rgb(255,255,255)",
+                }}
                 href="https://github.com/Prashoman"
                 className="bg-gradient-to-r px-1 py-1 cursor-pointer rounded-full from-cyan-400 to-sky-700  shadow-sm"
               >
                 <FaGithub className="w-10 h-8"></FaGithub>
-              </a>
-              <a
+              </motion.a>
+              <motion.a
+                whileHover={{
+                  scale: 1.1,
+                  textShadow: "0px 0px 8px rgb(255,255,255)",
+                  boxShadow: "0px 0px 8px rgb(255,255,255)",
+                }}
                 href="https://www.linkedin.com/in/prashoman-chakrabarti-2b827423b/"
                 className="bg-gradient-to-r px-1 py-1 cursor-pointer rounded-full from-cyan-400 to-sky-700  shadow-sm"
               >
                 <FaLinkedinIn className="w-10 h-8"></FaLinkedinIn>
-              </a>
-              <a
+              </motion.a>
+              <motion.a
+                whileHover={{
+                  scale: 1.1,
+                  textShadow: "0px 0px 8px rgb(255,255,255)",
+                  boxShadow: "0px 0px 8px rgb(255,255,255)",
+                }}
                 href="https://www.instagram.com/badhon_chakrabarti_/"
                 className="bg-gradient-to-r px-1 py-1 cursor-pointer rounded-full from-cyan-400 to-sky-700  shadow-sm"
               >
                 <FaInstagram className="w-10 h-8"></FaInstagram>
-              </a>
+              </motion.a>
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-1/2">
+        <div
+          className="w-full lg:w-1/2"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <form action="">
             <div className="form-control w-full">
               <label className="label">
@@ -106,9 +140,16 @@ const Contact = () => {
               ></textarea>
             </div>
             <div className="w-full mt-4">
-              <button className="py-2 w-full px-2 bg-gradient-to-r from-cyan-400 to-sky-700 rounded shadow-sm">
+              <motion.button
+                whileHover={{
+                  scale: 1,
+                  textShadow: "0px 0px 8px rgb(255,255,255)",
+                  boxShadow: "0px 0px 8px rgb(255,255,255)",
+                }}
+                className="py-2 w-full px-2 bg-gradient-to-r from-cyan-400 to-sky-700 rounded shadow-sm"
+              >
                 Send
-              </button>
+              </motion.button>
             </div>
           </form>
         </div>

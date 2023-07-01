@@ -1,12 +1,18 @@
 import { Link, NavLink } from "react-router-dom";
 import { FaAlignRight, FaTimes } from "react-icons/fa";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className=" py-6 bg-slate-800 text-white px-5 lg:px-20 fixed top-0 left-0 w-full z-50  shadow-lg">
-      <div className="flex justify-between items-center">
+      <div
+        className="flex justify-between items-center"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
         <div>
           <Link to="/">
             {" "}
@@ -76,13 +82,18 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="flex items-center space-x-3">
-          <a
+          <motion.a
+            whileHover={{
+              scale: 1.2,
+              //textShadow: "0px 0px 8px rgb(255,255,255)",
+              boxShadow: "0px 0px 8px rgb(255,255,255)",
+            }}
             href="Prashoman Chakrabarti_Resume.pdf"
             download="Resume"
             className="py-2  px-3 bg-gradient-to-r from-cyan-400 to-sky-700 rounded shadow-sm"
           >
             Resume
-          </a>
+          </motion.a>
           <p className="md:hidden" onClick={() => setOpen(!open)}>
             {open ? (
               <FaTimes className="h-8 w-10 text-blue-500" />

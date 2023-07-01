@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import {
   FaFacebook,
@@ -26,30 +27,50 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex items-center space-x-5">
-          <a
+          <motion.a
+            whileHover={{
+              scale: 1.1,
+              textShadow: "0px 0px 8px rgb(255,255,255)",
+              boxShadow: "0px 0px 8px rgb(255,255,255)",
+            }}
             href="https://www.facebook.com/prashmon.chakroborty"
             className="bg-gradient-to-r px-1 py-1 cursor-pointer  rounded-full from-cyan-400 to-sky-700  shadow-sm"
           >
             <FaFacebook className="w-10 h-8"></FaFacebook>
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            whileHover={{
+              scale: 1.1,
+              textShadow: "0px 0px 8px rgb(255,255,255)",
+              boxShadow: "0px 0px 8px rgb(255,255,255)",
+            }}
             href="https://github.com/Prashoman"
             className="bg-gradient-to-r px-1 py-1 cursor-pointer rounded-full from-cyan-400 to-sky-700  shadow-sm"
           >
             <FaGithub className="w-10 h-8"></FaGithub>
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            whileHover={{
+              scale: 1.1,
+              textShadow: "0px 0px 8px rgb(255,255,255)",
+              boxShadow: "0px 0px 8px rgb(255,255,255)",
+            }}
             href="https://www.linkedin.com/in/prashoman-chakrabarti-2b827423b/"
             className="bg-gradient-to-r px-1 py-1 cursor-pointer rounded-full from-cyan-400 to-sky-700  shadow-sm"
           >
             <FaLinkedinIn className="w-10 h-8"></FaLinkedinIn>
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            whileHover={{
+              scale: 1.1,
+              textShadow: "0px 0px 8px rgb(255,255,255)",
+              boxShadow: "0px 0px 8px rgb(255,255,255)",
+            }}
             href="https://www.instagram.com/badhon_chakrabarti_/"
             className="bg-gradient-to-r px-1 py-1 cursor-pointer rounded-full from-cyan-400 to-sky-700  shadow-sm"
           >
             <FaInstagram className="w-10 h-8"></FaInstagram>
-          </a>
+          </motion.a>
         </div>
       </div>
     </div>

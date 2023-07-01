@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { motion } from "framer-motion";
 
 import { Pagination, Navigation } from "swiper";
 const Projects = () => {
@@ -18,7 +19,11 @@ const Projects = () => {
         </h1>
       </div>
       <div className="grid lg:grid-cols-2 gap-8">
-        <div className="card card-compact  w-full h-96 bg-gray-700 shadow-xl">
+        <div
+          className="card card-compact  w-full h-96 bg-gray-700 shadow-xl"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <figure>
             <div className="image-wrap">
               <img
@@ -43,16 +48,25 @@ const Projects = () => {
               <a href="https://photography-school-client.web.app/">Live</a>
             </div>
             <div className="card-actions justify-end">
-              <button
+              <motion.button
+                whileHover={{
+                  scale: 1.1,
+                  textShadow: "0px 0px 8px rgb(255,255,255)",
+                  boxShadow: "0px 0px 8px rgb(255,255,255)",
+                }}
                 onClick={() => window.my_modal_5.showModal()}
                 className="py-2  px-3 bg-gradient-to-r from-cyan-400 to-sky-700 rounded shadow-sm"
               >
                 Details
-              </button>
+              </motion.button>
             </div>
           </div>
         </div>
-        <div className="card card-compact  w-full h-96 bg-gray-700 shadow-xl">
+        <div
+          className="card card-compact  w-full h-96 bg-gray-700 shadow-xl"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <figure>
             <div className="image-wrap">
               <img
@@ -78,16 +92,25 @@ const Projects = () => {
               <a href="https://indian-chef-recipe-client.web.app/">Live</a>
             </div>
             <div className="card-actions justify-end">
-              <button
+              <motion.button
+                whileHover={{
+                  scale: 1.1,
+                  textShadow: "0px 0px 8px rgb(255,255,255)",
+                  boxShadow: "0px 0px 8px rgb(255,255,255)",
+                }}
                 onClick={() => window.my_modal_6.showModal()}
                 className="py-2  px-3 bg-gradient-to-r from-cyan-400 to-sky-700 rounded shadow-sm"
               >
                 Details
-              </button>
+              </motion.button>
             </div>
           </div>
         </div>
-        <div className="card card-compact  w-full h-96 bg-gray-700 shadow-xl">
+        <div
+          className="card card-compact  w-full h-96 bg-gray-700 shadow-xl"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <figure>
             <div className="image-wrap">
               <img
@@ -117,12 +140,17 @@ const Projects = () => {
               </a>
             </div>
             <div className="card-actions justify-end">
-              <button
+              <motion.button
+                whileHover={{
+                  scale: 1.1,
+                  textShadow: "0px 0px 8px rgb(255,255,255)",
+                  boxShadow: "0px 0px 8px rgb(255,255,255)",
+                }}
                 onClick={() => window.my_modal_7.showModal()}
                 className="py-2  px-3 bg-gradient-to-r from-cyan-400 to-sky-700 rounded shadow-sm"
               >
                 Details
-              </button>
+              </motion.button>
             </div>
           </div>
         </div>
